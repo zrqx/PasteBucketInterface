@@ -21,7 +21,7 @@ function cookieBasedActions() {
         }
     } else {
         console.log('Cookie Not Found')
-        if (window.location.pathname == '/'){
+        if (window.location.pathname == '/' || window.location.pathname.includes('index.html')){
             // Change the Button Attributes (index.html)
             const btn = document.querySelector('.cta')
             btn.setAttribute('href', 'register.html')

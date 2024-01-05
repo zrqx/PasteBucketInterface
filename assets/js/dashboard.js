@@ -71,6 +71,15 @@ async function createPasteAndReturn() {
     })
 }
 
+async function retrievePasteAndReturn(){
+    // Push :: Form to collect `paste_id` input
+    canvas.innerHTML = ''
+    canvas.innerHTML += '<form action="#" id="create-form"><label for="message">Message ID</label><input id="message" type="text" name="message"></input><button> Submit </button></form>'
+
+    // Select the Forms and Elements
+    // Add event listeners onto them
+}
+
 // Elemenents
 let canvas = document.querySelector('.canvas')
 let indexButton = document.querySelector('.index')
@@ -82,3 +91,4 @@ let deleteButton = document.querySelector('.delete')
 // Events
 indexButton.addEventListener('click', retrieveAllPastesAndPush, false)
 createButton.addEventListener('click', createPasteAndReturn, false)
+retrieveButton.addEventListener('click', retrievePasteAndReturn, false)
